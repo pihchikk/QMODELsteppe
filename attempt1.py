@@ -24,7 +24,7 @@ def CSS(l,fC,u0,q0,b,e0,h11): #содержание углерода в равн
 CSS1=float(l/(fC*u0*q0**b)*e0/(1-e0-e0*h11*b))
 NSS1=float(CSS1*fN/fC) 
 NSS2=float((fN/fC-r0)*(1-e0-e0*h11*b)/(1-e0*h11*b)*CSS1) 
-def NSS(NSS1, NSS2): #содержание азота в равновесном состоянии
+def NSS(NSS1, NSS2): #содержание азота в равновесном состоянии, т/га
     return (NSS1-NSS2)  
 print('C steady state =',CSS(l,fC,u0,q0,b,e0,h11),',','N steady state =',NSS(NSS1, NSS2))
 step=0 #"шаг разложения" - количество циклов ассимиляции-продукции-отмирания биомассы, 
