@@ -83,6 +83,7 @@ def plotFIN(Years,Store,title,Xlab,Ylab): #визуализация
     ax.set_title(title,fontsize=18)
     plt.tick_params(axis='both', which='major', labelsize=16)
     plt.show()
+    fig.savefig('savepath'+str(title))
 plotFIN(tsM,CM,'Запасы углерода в почве','Годы','Запасы углерода, т/га')
 plotFIN(tsM,NM,'Запасы азота в почве','Годы','Запасы азота, т/га')
 plotFIN(tkM,gM,'Фракция подстилки','годы','C/C0, доля от изначального содержания Сорг')
