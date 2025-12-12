@@ -7,7 +7,6 @@
 ![Degradation of a heterogeneous substrate](images/fig_degradation_of_a_heterogenous_substrate.png), from Agren, Bosatta, 1999
 
 
-
 The Q-model simulates soil organic matter decomposition using the idea of **substrate “quality”** `q`
 - Fresh input enters the system (litter / organic input)
 - Microbial processing decreases quality over time
@@ -36,10 +35,20 @@ Clone the repository and make sure Python ≥ 3.9 is available.
 ```bash
 git clone https://github.com/yourname/qmodel.git
 cd qmodel
-
+```
 ---
 
-### 3.1. Import from a local folder
+## 3.1. Command-line interface (CLI)
+
+The model can be run directly from the command line.
+
+### Basic syntax
+
+```bash
+python -m qmodel.cli <model> --params <file> [options]
+```
+
+### 3.2. Import from a local folder
 If you extracted the project into a folder (for example `qmodel_project/`), add it to Python path:
 
 ```python
@@ -47,7 +56,7 @@ import sys
 sys.path.insert(0, "qmodel_project")
 ```
 
-### 3.2. Quick run: Forest
+### 3.3. Quick run: Forest
 ```python
 from qmodel.forest import ForestParams, forest_run
 
@@ -64,7 +73,7 @@ df = forest_run(p, n_steps=100, dt=1.0)   # 100 steps, dt=1 year
 df.head()
 ```
 
-### 3.3. Quick run: Bare fallow
+### 3.4. Quick run: Bare fallow
 Constant climate factor `Re`:
 ```python
 from qmodel.barefallow import BareFallowParams, barefallow_run
