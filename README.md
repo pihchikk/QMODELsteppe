@@ -33,12 +33,12 @@ The code provides two main scenarios:
 Clone the repository and make sure Python ≥ 3.9 is available.
 
 ```bash
-git clone https://github.com/yourname/qmodel.git
+git clone https://github.com/pihchikk/qmodel.git
 cd qmodel
 ```
 ---
 
-## 3.1. Command-line interface (CLI)
+### 3.1. Command-line interface (CLI)
 
 The model can be run directly from the command line.
 
@@ -50,12 +50,11 @@ python -m qmodel.cli <model> --params <file> [options]
 
 Where:
 
-<model> is one of: forest, barefallow
-
---params is a CSV / Excel / JSON file with model parameters
+* <model> is one of: forest, barefallow
+* --params is a CSV / Excel / JSON file with model parameters
 
 Example:
-```python
+```bash
 python -m qmodel.cli forest \
   --params params_forest.csv \
   --years 100 \
@@ -64,7 +63,7 @@ python -m qmodel.cli forest \
 ```
 
 
-### 3.2. Import from a local folder
+#### Optional: import from a local folder
 If you extracted the project into a folder (for example `qmodel_project/`), add it to Python path:
 
 ```python
