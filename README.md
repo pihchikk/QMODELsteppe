@@ -48,6 +48,22 @@ The model can be run directly from the command line.
 python -m qmodel.cli <model> --params <file> [options]
 ```
 
+Where:
+
+<model> is one of: forest, barefallow
+
+--params is a CSV / Excel / JSON file with model parameters
+
+Example:
+```python
+python -m qmodel.cli forest \
+  --params params_forest.csv \
+  --years 100 \
+  --dt 1 \
+  --out results_forest/
+```
+
+
 ### 3.2. Import from a local folder
 If you extracted the project into a folder (for example `qmodel_project/`), add it to Python path:
 
