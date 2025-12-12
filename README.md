@@ -50,8 +50,8 @@ python -m qmodel.cli <model> --params <file> [options]
 
 Where:
 
-* <model> is one of: forest, barefallow
-* --params is a CSV / Excel / JSON file with model parameters
++ ```<model>``` is one of: ```forest```, ```barefallow```
++ ```--params``` is a CSV / Excel / JSON file with model parameters
 
 Example:
 ```bash
