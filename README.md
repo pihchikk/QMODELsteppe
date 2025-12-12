@@ -4,7 +4,7 @@
 
 ## 1. What the model does 
 
-![Degradation of a heterogeneous substrate](images/fig_degradation_of_a_heterogenous_substrate.png), from Agren, Bosatta, 1999
+![Degradation of a heterogeneous substrate](images/fig_degradation_of_a_heterogenous_substrate.png), adapted from (Bosatta, E., & Ågren, G. I. (1999). Soil organic matter quality interpreted thermodynamically. Soil Biology and Biochemistry, 31(13), 1889-1891.)
 
 
 The Q-model simulates soil organic matter decomposition using the idea of **substrate “quality”** `q`
